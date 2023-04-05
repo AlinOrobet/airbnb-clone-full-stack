@@ -1,38 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Airbnb Clone - Full Stack 
 
-## Getting Started
+[Demo Live]()
 
-First, run the development server:
+# Table of contents
+- About project
+- Features
+- Languages and Tools
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# About project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The main objective of my project was to learn Typescript and how to work with the back-end in Next.js. To achieve this, I attempted to replicate the Airbnb website. In this project, I allowed anyone to create a user account, create a listing, set favorites listings, search using filters : country/number of guests/dates, create reservations, remove reservations, if you are owner of one property you can remove specific reservations, listing reservations, trips screen, properties screen and many more. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Features
+Among the main features are:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Authentication system
+- Google and Github OAuth
+- Prisma ORM with MongoDB
+- Responsive Layout
+- Listing creation
+- Fetching listings with server components (Listing card component, direct server action)
+- Favoriting functionality
+- Individual Listing View
+- Listing reservation component
+- Reservation functionality (routes, logic)
+- Trips screen (Loading trips with server component)
+- Reservations screen (Loading guest reservations with server component)
+- Favorites screen (Loading favorites with server component)
+- Properties screen (Loading your listings with server component)
+- Filters modal (Assigning various filters, add advanced querying logic to getListings, add loading and error pages)
+- Vercel Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Languages and Tools
+- [Nextjs](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Next-auth](https://next-auth.js.org/)
+- [Mongodb](https://www.mongodb.com/)
+- [Prisma](https://www.prisma.io/)
+- [Axios](https://www.digitalocean.com/community/tutorials/react-axios-react)
