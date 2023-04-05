@@ -7,6 +7,7 @@ import ToasterProvider from "./providers/ToasterProvider";
 import LoginModal from "./components/modals/LoginModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import RentModal from "./components/modals/RentModal";
+import SearchModal from "./components/modals/SearchModal";
 
 export const metadata = {
   title: "Airbnb",
@@ -24,6 +25,7 @@ export default async function RootLayout({children}: {children: React.ReactNode}
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
+          <SearchModal />
           <ToasterProvider />
           <RentModal />
           <LoginModal />
