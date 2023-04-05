@@ -61,6 +61,9 @@ const RentModal = () => {
   const roomCount = watch("roomCount");
   const bathroomCount = watch("bathroomCount");
   const imageSrc = watch("imageSrc");
+  const title = watch("title");
+  const description = watch("description");
+  const price = watch("price");
 
   const Map = useMemo(
     () =>
@@ -213,6 +216,7 @@ const RentModal = () => {
         <Input
           id="title"
           label="Title"
+          value={title}
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -222,6 +226,7 @@ const RentModal = () => {
         <Input
           id="description"
           label="Description"
+          value={description}
           disabled={isLoading}
           register={register}
           errors={errors}
@@ -237,6 +242,7 @@ const RentModal = () => {
         <Heading title="Now, set your price" subtitle="How much do you charge per night?" />
         <Input
           id="price"
+          value={price}
           label="Price"
           formatPrice
           type="number"
